@@ -1,0 +1,8 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "oplsaa.ff/tip3p.itp"
+
+[ system ]
+Water Slab for Clausius-Clapeyron Phase 1
+
+[ molecules ]
+
