@@ -1,0 +1,74 @@
+# This file was created Tue May 12 23:56:15 2026
+# Created by:
+#                 :-) GROMACS - gmx density, 2026.2-Homebrew (-:
+# 
+# Executable:   /usr/local/bin/../Cellar/gromacs/2026.2/bin/gmx
+# Data prefix:  /usr/local/bin/../Cellar/gromacs/2026.2
+# Working dir:  /Users/thyagi/moka_pot_project/01_water_slab
+# Command line:
+#   gmx density -f nvt_365K.xtc -s nvt_365K.tpr -d Z -o density_365K.xvg
+# gmx density is part of G R O M A C S:
+#
+# S  C  A  M  O  R  G
+#
+@    title "Partial density"
+@    xaxis  label "Average coordinate (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Water"
+        0.15         0.228114
+        0.45         0.318147
+        0.75         0.243582
+        1.05           0.3488
+        1.35         0.236953
+        1.65         0.309308
+        1.95         0.318147
+        2.25          1.61946
+        2.55          1.77686
+        2.85         0.162388
+        3.15         0.355429
+        3.45         0.195251
+        3.75         0.383873
+        4.05          2.35904
+        4.35          32.8636
+        4.65           228.67
+        4.95          653.075
+        5.25          862.847
+        5.55          905.792
+        5.85          905.639
+        6.15          901.727
+        6.45          904.423
+        6.75           911.41
+        7.05           901.41
+        7.35          909.073
+        7.65          906.566
+        7.95          901.611
+        8.25          907.248
+        8.55           903.73
+        8.85          906.079
+        9.15          905.681
+        9.45          892.961
+        9.75          848.444
+       10.05          623.633
+       10.35          216.032
+       10.65          27.1049
+       10.95          1.41758
+       11.25         0.581333
+       11.55         0.717487
+       11.85         0.555099
+       12.15         0.587962
+       12.45          0.75477
+       12.75         0.785423
+       13.05         0.724116
+       13.35         0.781004
+       13.65         0.809447
+       13.95         0.653971
+       14.25         0.386082
+       14.55         0.232533
+       14.85         0.331405

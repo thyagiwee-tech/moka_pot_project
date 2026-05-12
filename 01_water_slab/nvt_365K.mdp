@@ -1,0 +1,24 @@
+integrator              = md        ; The standard Newton's laws integrator
+nsteps                  = 50000     ; Run for 50,000 steps (100 picoseconds)
+dt                      = 0.002     ; 2 femtosecond time step
+
+nstenergy               = 500       ; Save energy data every 1 ps
+nstxout-compressed      = 500       ; Save a video frame every 1 ps
+
+cutoff-scheme           = Verlet    
+ns_type                 = grid      
+coulombtype             = PME       ; Particle Mesh Ewald for long-range electrostatics
+rcoulomb                = 1.0       
+rvdw                    = 1.0       
+pbc                     = xyz       ; Periodic Boundary Conditions
+
+; THERMOSTAT SETTINGS (Heating it up!)
+tcoupl                  = V-rescale ; The temperature thermostat algorithm
+tc-grps                 = System    ; Apply thermostat to the whole system
+tau_t                   = 0.1       ; Time constant for heating (ps)
+ref_t                   = 365       ; Target temperature (300 Kelvin)
+
+; VELOCITY GENERATION
+gen_vel                 = yes       ; Generate random velocities at the start
+gen_temp                = 365       ; Based on a 300K Maxwell-Boltzmann distribution
+gen_seed                = -1        ; Use a random seed
