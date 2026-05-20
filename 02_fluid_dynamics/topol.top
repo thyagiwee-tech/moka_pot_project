@@ -1,0 +1,9 @@
+#include "oplsaa.ff/forcefield.itp"
+#include "oplsaa.ff/tip3p.itp"
+
+[ system ]
+Water Box for Fluid Dynamics Phase 2 in water
+
+[ molecules ]
+
+SOL              2165
