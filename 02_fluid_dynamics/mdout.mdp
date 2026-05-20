@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: thyagi (502)
 ;	On host: Thyagis-MacBook-Pro.local
-;	At date: Wed May 20 22:40:49 2026
+;	At date: Wed May 20 23:05:32 2026
 ;
 ;	Created by:
 ;	                :-) GROMACS - gmx grompp, 2026.2-Homebrew (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /usr/local/bin/../Cellar/gromacs/2026.2
 ;	Working dir:  /Users/thyagi/moka_pot_project/02_fluid_dynamics
 ;	Command line:
-;	  gmx grompp -f nvt_visc_300K.mdp -c em.gro -p topol.top -o nvt_visc_300K.tpr -maxwarn 1
+;	  gmx grompp -f nvt_visc_375K.mdp -c em.gro -p topol.top -o nvt_visc_375K.tpr -maxwarn 1
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -145,7 +145,7 @@ print-nose-hoover-chain-variables = no
 tc-grps                  = System
 ; Time constant (ps) and reference temperature (K)
 tau_t                    = 0.1
-ref_t                    = 300
+ref_t                    = 375
 ; pressure coupling     
 pcoupl                   = No
 pcoupltype               = Isotropic
@@ -174,8 +174,8 @@ annealing-temp           =
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = yes
-gen_temp                 = 300
-gen_seed                 = -16843810
+gen_temp                 = 375
+gen_seed                 = -16025699
 
 ; OPTIONS FOR BONDS    
 constraints              = none
