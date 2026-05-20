@@ -1,0 +1,28 @@
+integrator              = md
+nsteps                  = 100000    ; 200 picoseconds (we need a bit more time to establish flow)
+dt                      = 0.002
+
+nstenergy               = 500
+nstcalcenergy           = 100       
+nstxout-compressed      = 500
+
+cutoff-scheme           = Verlet
+ns_type                 = grid
+coulombtype             = PME
+rcoulomb                = 1.0
+rvdw                    = 1.0
+pbc                     = xyz
+
+; THERMOSTAT
+tcoupl                  = V-rescale
+tc-grps                 = System
+tau_t                   = 0.1
+ref_t                   = 330
+
+; VELOCITY GENERATION
+gen_vel                 = yes
+gen_temp                = 330
+gen_seed                = -1
+
+; MOKA POT PRESSURE SIMULATION (NEMD)
+cos-acceleration        = 0.05      ; The driving force pushing the water!
